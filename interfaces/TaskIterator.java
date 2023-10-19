@@ -1,8 +1,10 @@
 package TodoList.interfaces;
 
-public interface TaskIterator<T> {
+import TodoList.models.Task;
 
-    T getNext();
+public interface TaskIterator {
+
+    Task getNext();
 
     boolean hasNext();
 

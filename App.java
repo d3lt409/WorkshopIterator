@@ -11,7 +11,7 @@ import TodoList.models.TodoList;
 public class App {
     private static Scanner inScanner = new Scanner(System.in);
 
-    private static List<String> showTask(TaskIterator<Task> iterator) {
+    private static List<String> showTask(TaskIterator iterator) {
         int count = 1;
         List<String> list = new ArrayList<String>();
         while (iterator.hasNext()) {
@@ -23,7 +23,7 @@ public class App {
         return list;
     }
 
-    private static String selectTasks(TaskIterator<Task> iterator) {
+    private static String selectTasks(TaskIterator iterator) {
         List<String> tasksTitle;
         if (iterator.hasNext()) {
             System.out.println("--------------------------------");
@@ -42,7 +42,7 @@ public class App {
 
         int option = 0;
         String title = "";
-        TaskIterator<Task> iterator;
+        TaskIterator iterator;
 
         do {
             System.out.println("\n\t\t--------------------------------");

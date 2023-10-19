@@ -38,12 +38,12 @@ public class TodoList implements TaskCollection {
     }
 
     @Override
-    public TaskIterator<Task> allTask() {
+    public TaskIterator allTask() {
         return new TaskListIterator(tasks);
     }
 
     @Override
-    public TaskIterator<Task> completedTasks() {
+    public TaskIterator completedTasks() {
         List<Task> completed = new ArrayList<Task>();
         for (Task task : tasks) {
             if (task.isCompleted()){
@@ -54,7 +54,7 @@ public class TodoList implements TaskCollection {
     }
 
     @Override
-    public TaskIterator<Task> inCompletedTasks() {
+    public TaskIterator inCompletedTasks() {
         List<Task> inCompleted = new ArrayList<Task>();
         for (Task task : tasks) {
             if (!task.isCompleted()){

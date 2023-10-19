@@ -4,7 +4,7 @@ import java.util.List;
 
 import TodoList.interfaces.TaskIterator;
 
-public class TaskListIterator implements TaskIterator<Task> {
+public class TaskListIterator implements TaskIterator {
 
     private int currentPosition;
     private List<Task> tasks;
